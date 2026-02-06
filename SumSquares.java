@@ -24,8 +24,10 @@ public class SumSquares {
         //System.out.println("You entered: " + startNum + " and " + endNum);
         System.out.println("Sequence of squares from " + startNum + " to " + endNum);
         int total = 0;
-        for (int i = startNum; i <= endNum; ++i) {
+        int i = startNum;
+        while (i <= endNum) {
             total += i*i;
+            ++i;
         }
         System.out.println(total);
     }
